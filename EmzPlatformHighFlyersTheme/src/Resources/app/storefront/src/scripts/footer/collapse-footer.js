@@ -20,7 +20,7 @@ export default class CollapseFooter extends Plugin {
     }
 
     _uncollapseFooter() {
-        this._footerBlockContent.classList.remove('collapse');
+        this._footerBlockContent.classList.remove('d-none');
 
         this._uncollapseFooterIcon.classList.add('d-none');
         this._uncollapseFooterIcon.classList.remove('d-flex');
@@ -30,7 +30,7 @@ export default class CollapseFooter extends Plugin {
     }
 
     _collapseFooter() {
-        this._footerBlockContent.classList.add('collapse');
+        this._footerBlockContent.classList.add('d-none');
 
         this._collapseFooterIcon.classList.add('d-none');
         this._collapseFooterIcon.classList.remove('d-flex');
